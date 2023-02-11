@@ -1,5 +1,15 @@
+# Azure Porvider source and version being useddata
+terraform {
+  required_providers {
+    azurerm = {
+      source = "hashicorp/azurerm"
+      version = "2.9.0"
+    }
+  }
+}
+
+# Configure the Microsoft Azure Provider
 provider "azurerm" {
-  version = "2.9.0"
   features {}
 }
 
